@@ -1,8 +1,12 @@
+import { useNavigate } from "react-router-dom";
 import style from "./Home.module.css"
 
 export default function Home(){
+    const navigate = useNavigate();
 
     return(
-        <h1>Hello</h1>
+        <>
+            <button onClick={() => navigate("/scheduling")}>CPU Scheduling</button>
+        </>
     )
 }
